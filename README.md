@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/quoinex-client.svg)](https://badge.fury.io/py/quoinex-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-quoinex-client is a python client (sync/async) library for quoinex api
+quoinex-client is a python client (sync/async) library for liquid(quoinex) api
 
 ## Installation
 
@@ -17,7 +17,7 @@ quoinex-client is a python client (sync/async) library for quoinex api
 #
 from quoinex_client.sync import Client
 
-client = Clinet(public_key='your api key', private_key='your api secret')
+client = Client(public_key='your api key', private_key='your api secret')
 response = client.get_products()
 print(response.status_code, response.json())
 
